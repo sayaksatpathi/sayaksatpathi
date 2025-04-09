@@ -1,4 +1,4 @@
-# 💫 About Me:
+<h1 align="center">Hi 👋, I'm Sayak Satpathi</h1>
 👋 About Me<br>I'm a CSE (AI & ML) student at Sikkim Manipal Institute of Technology, passionate about building intelligent systems and meaningful tech. I thrive at the intersection of AI, full-stack development, and cloud technologies.<br><br>🚀 What I'm Working On:<br><br>🌐 Crafting my personal developer portfolio<br>☁️ Learning AWS Cloud Technical Essentials by Amazon<br>🧠 Exploring the world of Large Language Models (LLMs)<br><br>🤝 I'm Looking to Collaborate On:<br><br>🏆 Hackathons and innovative tech workshops<br>🤖 Projects involving AI, ML, cloud, or LLM integrations<br><br>📬 Let's Connect<br>Open to meaningful conversations, project collaborations, or just tech banter!<br>Feel free to reach out and build something awesome together.<br><br>
 
 
