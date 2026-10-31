@@ -2,6 +2,12 @@
 
 <img src="hero_banner.svg" width="100%" alt="Sayak Satpathi — AI/ML · Full-Stack · DevOps" />
 
+<br/>
+
+<img src="shinchan.svg" width="200" alt="Shinchan — hand-coded in Python turtle" />
+
+<sub><i>↑ drawn entirely in Python <code>turtle</code> — see <a href="scripts/shinchan_turtle.py">scripts/shinchan_turtle.py</a></i></sub>
+
 <br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=sayaksatpathi&label=VISITORS&color=1a1a2e&style=for-the-badge&labelColor=1a1a2e" height="32" alt="Profile views"/>
