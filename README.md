@@ -4,9 +4,15 @@
 
 <br/>
 
-<img src="shinchan.svg" width="200" alt="Shinchan — hand-coded in Python turtle" />
+<img src="shinchan.svg" width="190" align="center" alt="Shinchan — hand-coded in Python turtle, now animated" />
+&nbsp;&nbsp;&nbsp;
+<img src="cube.svg" width="360" alt="Floating 3D isometric tech cube with an orbiting ring" />
 
-<sub><i>↑ drawn entirely in Python <code>turtle</code> — see <a href="scripts/shinchan_turtle.py">scripts/shinchan_turtle.py</a></i></sub>
+<sub><i>Shinchan is drawn entirely in Python <code>turtle</code> — see <a href="scripts/shinchan_turtle.py">scripts/shinchan_turtle.py</a></i></sub>
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&pause=1000&color=00F5FF&center=true&vCenter=true&width=620&height=50&lines=AI+%2F+ML+Engineer+in+the+making;Full-Stack+Developer+%7C+MLOps+explorer;I+turn+chai+into+clean+commits;Building+things+that+detect%2C+decide+%26+deploy" alt="Typing animation" />
 
 <br/><br/>
 
@@ -127,6 +133,12 @@ AI-powered fraud detection system using ML models to identify and prevent suspic
 <br/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sayaksatpathi&layout=compact&theme=radical&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&border_color=302b63&hide_border=false" width="95%" alt="Top languages" />
+
+<br/><br/>
+
+### 🐍 Watch the snake eat my contributions
+
+<img src="https://raw.githubusercontent.com/sayaksatpathi/sayaksatpathi/output/snake-dark.svg" width="95%" alt="Contribution snake animation" />
 
 <br/><br/>
 
