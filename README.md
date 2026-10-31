@@ -1,21 +1,21 @@
 <div align="center">
 
-<img src="hero_banner.svg" width="100%" />
+<img src="hero_banner.svg" width="100%" alt="Sayak Satpathi — AI/ML · Full-Stack · DevOps" />
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=sayaksatpathi&label=VISITORS&color=1a1a2e&style=for-the-badge&labelColor=1a1a2e" height="32"/>
-<img src="https://img.shields.io/github/followers/sayaksatpathi?label=FOLLOWERS&style=for-the-badge&color=B026FF&labelColor=1a1a2e" height="32"/>
-<img src="https://img.shields.io/badge/dynamic/json?color=FFD700&label=STARS&style=for-the-badge&labelColor=1a1a2e&query=%24.stars&url=https%3A%2F%2Fapi.github-star-counter.workers.dev%2Fuser%2Fsayaksatpathi" height="32"/>
-<img src="https://img.shields.io/badge/REPOS-45%2B-00F5FF?style=for-the-badge&labelColor=1a1a2e" height="32"/>
+<img src="https://komarev.com/ghpvc/?username=sayaksatpathi&label=VISITORS&color=1a1a2e&style=for-the-badge&labelColor=1a1a2e" height="32" alt="Profile views"/>
+<img src="https://img.shields.io/github/followers/sayaksatpathi?label=FOLLOWERS&style=for-the-badge&color=B026FF&labelColor=1a1a2e" height="32" alt="GitHub followers"/>
+<img src="https://img.shields.io/badge/dynamic/json?color=FFD700&label=STARS&style=for-the-badge&labelColor=1a1a2e&query=%24.stars&url=https%3A%2F%2Fapi.github-star-counter.workers.dev%2Fuser%2Fsayaksatpathi" height="32" alt="Total stars"/>
+<img src="https://img.shields.io/badge/REPOS-45%2B-00F5FF?style=for-the-badge&labelColor=1a1a2e" height="32" alt="Repositories"/>
 
 </div>
 
 <br/>
 
 <div align="center">
-<img src="terminal_card.svg" width="48%" />
-<img src="about_card.svg" width="48%" />
+<img src="terminal_card.svg" width="48%" alt="Terminal: whoami" />
+<img src="about_card.svg" width="48%" alt="About me" />
 </div>
 
 <br/>
@@ -70,7 +70,7 @@
 
 <div align="center">
 
-## 🚀 Featured Projects
+## 🖍️ Featured Projects
 
 </div>
 
@@ -83,7 +83,7 @@ YOLO-based intelligent traffic monitoring system for real-time vehicle detection
 
 `Python` `YOLOv8` `OpenCV` `Deep Learning`
 
-[🔗 Live Demo](#) · [📂 GitHub Repo](#)
+[📂 Repositories](https://github.com/sayaksatpathi?tab=repositories)
 
 </td>
 <td width="33%" valign="top">
@@ -93,7 +93,7 @@ Personal finance tracker to manage expenses, set budgets, and visualize spending
 
 `React` `Node.js` `MongoDB` `Chart.js`
 
-[🔗 Live Demo](#) · [📂 GitHub Repo](#)
+[📂 Repositories](https://github.com/sayaksatpathi?tab=repositories)
 
 </td>
 <td width="33%" valign="top">
@@ -101,9 +101,9 @@ Personal finance tracker to manage expenses, set budgets, and visualize spending
 ### 🛡️ CyberShield AI
 AI-powered fraud detection system using ML models to identify and prevent suspicious activities.
 
-`Python` `Machine Learning` `Flask` `SQLite`
+`Python` `Machine Learning` `Streamlit` `scikit-learn`
 
-[🔗 Live Demo](#) · [📂 GitHub Repo](#)
+[📂 GitHub Repo](https://github.com/sayaksatpathi/cybershield-ai-streamlit)
 
 </td>
 </tr>
@@ -115,18 +115,18 @@ AI-powered fraud detection system using ML models to identify and prevent suspic
 
 ## 📊 GitHub Analytics
 
-<img src="https://github-stats-extended.vercel.app/api?username=sayaksatpathi&show_icons=true&theme=radical&bg_color=0d1117&title_color=00F5FF&icon_color=B026FF&text_color=c9d1d9&border_color=302b63&hide_border=false" width="48%" />
-<img src="https://streak-stats.demolab.com?user=sayaksatpathi&theme=radical&background=0d1117&border=302b63&ring=B026FF&fire=FFD700&currStreakLabel=00F5FF" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=sayaksatpathi&show_icons=true&theme=radical&bg_color=0d1117&title_color=00F5FF&icon_color=B026FF&text_color=c9d1d9&border_color=302b63&hide_border=false" width="48%" alt="GitHub stats" />
+<img src="https://streak-stats.demolab.com?user=sayaksatpathi&theme=radical&background=0d1117&border=302b63&ring=B026FF&fire=FFD700&currStreakLabel=00F5FF" width="48%" alt="GitHub streak" />
 
 <br/>
 
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=sayaksatpathi&layout=compact&theme=radical&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&border_color=302b63&hide_border=false" width="95%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sayaksatpathi&layout=compact&theme=radical&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&border_color=302b63&hide_border=false" width="95%" alt="Top languages" />
 
 <br/><br/>
 
 ### 📈 Contribution Graph
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sayaksatpathi&theme=react-dark&bg_color=0d1117&color=00F5FF&line=B026FF&point=FFD700&hide_border=true" width="95%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sayaksatpathi&theme=react-dark&bg_color=0d1117&color=00F5FF&line=B026FF&point=FFD700&hide_border=true" width="95%" alt="Contribution activity graph" />
 
 </div>
 
@@ -190,6 +190,6 @@ while (learning) {
 
 **Let's build something amazing together! 💡**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%" alt=""/>
 
 </div>

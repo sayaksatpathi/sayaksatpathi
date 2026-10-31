@@ -1,42 +1,56 @@
-<svg width="600" height="560" viewBox="0 0 600 560" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340" font-family="'Segoe UI',Verdana,sans-serif" role="img" aria-label="About card showing focus areas and animated skill-fuel meters for ML, Full-Stack, DevOps and Problem Solving">
   <defs>
-    <linearGradient id="borderGrad2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#B026FF"/>
-      <stop offset="100%" stop-color="#00F5FF"/>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171436"/><stop offset="1" stop-color="#0d1117"/>
     </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F5FF"/><stop offset="1" stop-color="#B026FF"/>
+    </linearGradient>
+    <style>
+      .grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:gw 1.4s cubic-bezier(.2,.8,.2,1) forwards}
+      .g2{animation-delay:.2s}.g3{animation-delay:.4s}.g4{animation-delay:.6s}
+      @keyframes gw{to{transform:scaleX(1)}}
+      .pop{opacity:0;animation:pp .5s ease forwards}
+      .p2{animation-delay:.3s}.p3{animation-delay:.5s}.p4{animation-delay:.7s}
+      @keyframes pp{to{opacity:1}}
+      .spin{transform-box:fill-box;transform-origin:center;animation:sp 9s linear infinite}
+      @keyframes sp{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){.grow{transform:scaleX(1);animation:none}.pop{opacity:1;animation:none}.spin{animation:none}}
+    </style>
   </defs>
-  <rect x="2" y="2" width="596" height="556" rx="14" fill="#0a0e1a" stroke="url(#borderGrad2)" stroke-width="2" opacity="0.95"/>
+  <rect width="600" height="340" rx="14" fill="url(#abg)" stroke="#302b63" stroke-width="2"/>
 
-  <text x="40" y="55" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">👋 About Me</text>
+  <!-- header -->
+  <circle class="spin" cx="40" cy="42" r="16" fill="none" stroke="#FFD23F" stroke-width="3" stroke-dasharray="50 14"/>
+  <text x="68" y="38" font-size="20" font-weight="800" fill="#00F5FF">about.me</text>
+  <text x="68" y="58" font-size="13" fill="#8b93a7">// turning ideas into shipped software</text>
 
-  <text x="40" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="14.5" fill="#c9d1d9">I'm a passionate CSE (AI &amp; ML) student at SMIT</text><text x="40" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="14.5" fill="#c9d1d9">who loves to build, break, learn, and repeat. I</text><text x="40" y="144" font-family="Segoe UI, Arial, sans-serif" font-size="14.5" fill="#c9d1d9">enjoy turning ideas into real-world solutions</text><text x="40" y="166" font-family="Segoe UI, Arial, sans-serif" font-size="14.5" fill="#c9d1d9">using AI, modern web technologies, and cloud</text><text x="40" y="188" font-family="Segoe UI, Arial, sans-serif" font-size="14.5" fill="#c9d1d9">tools.</text>
+  <!-- focus chips -->
+  <g font-size="12.5" font-weight="600">
+    <g class="pop">   <rect x="24"  y="78" width="128" height="30" rx="15" fill="#11182a" stroke="#E63946" stroke-width="1.5"/><text x="88"  y="98" text-anchor="middle" fill="#E63946">🤖 Machine Learning</text></g>
+    <g class="pop p2"><rect x="162" y="78" width="118" height="30" rx="15" fill="#11182a" stroke="#00F5FF" stroke-width="1.5"/><text x="221" y="98" text-anchor="middle" fill="#00F5FF">👁 Computer Vision</text></g>
+    <g class="pop p3"><rect x="290" y="78" width="108" height="30" rx="15" fill="#11182a" stroke="#B026FF" stroke-width="1.5"/><text x="344" y="98" text-anchor="middle" fill="#B026FF">🌐 Full-Stack</text></g>
+    <g class="pop p4"><rect x="408" y="78" width="96"  height="30" rx="15" fill="#11182a" stroke="#FFD23F" stroke-width="1.5"/><text x="456" y="98" text-anchor="middle" fill="#FFD23F">⚙ DevOps</text></g>
+  </g>
 
-  
-    <rect x="40" y="220" width="250" height="92" rx="10" fill="#11162a" stroke="#262c47" stroke-width="1.5"/>
-    <text x="56" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="17">📚</text>
-    <text x="86" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#00F5FF">Education</text>
-    <text x="56" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#c9d1d9">B.Tech CSE (AI &amp; ML), SMIT</text>
-    
+  <!-- skill-fuel meters -->
+  <g font-size="13" fill="#c9d1d9" font-weight="600">
+    <text x="24" y="150">ML &amp; Deep Learning</text>
+    <rect x="24" y="158" width="552" height="12" rx="6" fill="#11182a"/>
+    <rect class="grow"    x="24" y="158" width="470" height="12" rx="6" fill="url(#bar)"/>
 
-    <rect x="310" y="220" width="250" height="92" rx="10" fill="#11162a" stroke="#262c47" stroke-width="1.5"/>
-    <text x="326" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="17">💻</text>
-    <text x="356" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#B026FF">Interests</text>
-    <text x="326" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#c9d1d9">AI/ML, Web Dev, Cloud, OSS</text>
-    
+    <text x="24" y="192">Full-Stack Web</text>
+    <rect x="24" y="200" width="552" height="12" rx="6" fill="#11182a"/>
+    <rect class="grow g2" x="24" y="200" width="430" height="12" rx="6" fill="url(#bar)"/>
 
-    <rect x="40" y="332" width="250" height="92" rx="10" fill="#11162a" stroke="#262c47" stroke-width="1.5"/>
-    <text x="56" y="364" font-family="Segoe UI, Arial, sans-serif" font-size="17">🌱</text>
-    <text x="86" y="364" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#27c93f">Currently</text>
-    <text x="56" y="390" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#c9d1d9">Learning &amp; Building Everyday</text>
-    
+    <text x="24" y="234">DevOps &amp; Cloud</text>
+    <rect x="24" y="242" width="552" height="12" rx="6" fill="#11182a"/>
+    <rect class="grow g3" x="24" y="242" width="360" height="12" rx="6" fill="url(#bar)"/>
 
-    <rect x="310" y="332" width="250" height="92" rx="10" fill="#11162a" stroke="#262c47" stroke-width="1.5"/>
-    <text x="326" y="364" font-family="Segoe UI, Arial, sans-serif" font-size="17">🎯</text>
-    <text x="356" y="364" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ff5f56">Goal</text>
-    <text x="326" y="390" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#c9d1d9">Become an AI Engineer</text>
-    
+    <text x="24" y="276">Problem Solving</text>
+    <rect x="24" y="284" width="552" height="12" rx="6" fill="#11182a"/>
+    <rect class="grow g4" x="24" y="284" width="500" height="12" rx="6" fill="url(#bar)"/>
+  </g>
 
-  <rect x="40" y="440" width="4" height="60" fill="url(#borderGrad2)"/>
-  <text x="60" y="464" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-style="italic" fill="#d6d6e8">"Code is like humor. When you have to explain it,</text>
-  <text x="60" y="484" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-style="italic" fill="#d6d6e8">it's bad." <tspan fill="#8b8bb0">&#8212; Cory House</tspan></text>
+  <text x="24" y="320" font-size="12.5" fill="#8b93a7" font-style="italic">“Consistency &gt; Motivation · Progress &gt; Perfection”</text>
 </svg>

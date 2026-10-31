@@ -1,85 +1,120 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" font-family="'Segoe UI',Verdana,sans-serif" role="img" aria-label="Sayak Satpathi — AI/ML, Full-Stack and DevOps developer, with an original cartoon mascot waving beside a laptop">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f0c29"/>
-      <stop offset="50%" stop-color="#241b4e"/>
-      <stop offset="100%" stop-color="#1a1030"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0c29"/>
+      <stop offset="0.5" stop-color="#171436"/>
+      <stop offset="1" stop-color="#0d1117"/>
     </linearGradient>
-    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00F5FF"/>
-      <stop offset="55%" stop-color="#8b5cf6"/>
-      <stop offset="100%" stop-color="#ff00e6"/>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F5FF"><animate attributeName="stop-color" values="#00F5FF;#B026FF;#FFD23F;#00F5FF" dur="6s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#B026FF"><animate attributeName="stop-color" values="#B026FF;#FFD23F;#00F5FF;#B026FF" dur="6s" repeatCount="indefinite"/></stop>
     </linearGradient>
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#B026FF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#B026FF" stop-opacity="0"/>
     </radialGradient>
+    <style>
+      .twinkle{animation:tw 3s ease-in-out infinite}
+      .twinkle.b{animation-delay:1s}.twinkle.c{animation-delay:2s}
+      @keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+      .float{animation:fl 5s ease-in-out infinite}
+      .float.b{animation-delay:1.5s}.float.c{animation-delay:3s}
+      @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+      .wave{transform-box:fill-box;transform-origin:85% 95%;animation:wv 2.2s ease-in-out infinite}
+      @keyframes wv{0%,100%{transform:rotate(0)}25%{transform:rotate(18deg)}75%{transform:rotate(-14deg)}}
+      .blink{animation:bl 4s step-end infinite}
+      @keyframes bl{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+      .bob{animation:bob 4s ease-in-out infinite}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+      .caret{animation:ca 1s step-end infinite}
+      @keyframes ca{50%{opacity:0}}
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
   </defs>
 
-  <rect width="1200" height="300" fill="url(#bgGrad)"/>
-  <rect width="1200" height="300" fill="none" stroke="#3d2e6b" stroke-width="2"/>
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="18" fill="none" stroke="#302b63" stroke-width="2"/>
 
-  <!-- moon -->
-  <circle cx="1145" cy="48" r="38" fill="url(#moonGlow)"/>
-  <circle cx="1145" cy="48" r="20" fill="#d8d3ff" opacity="0.85"/>
-
-  <!-- top bar -->
-  <text x="24" y="28" font-family="Consolas, monospace" font-size="13" fill="#6b6b95">C:\Users\sayak\README.md</text>
-  <text x="720" y="28" font-family="Consolas, monospace" font-size="12" fill="#6b6b95">&gt; initializing profile.exe</text>
-  <circle cx="900" cy="24" r="5" fill="#ff5f56"/>
-  <circle cx="918" cy="24" r="5" fill="#27c93f"/>
-
-  <!-- skyline -->
-  <g opacity="0.30" fill="#00F5FF">
-    <rect x="0" y="241" width="38" height="59"/>
-    <rect x="45" y="254" width="48" height="46"/>
-    <rect x="97" y="192" width="54" height="108"/>
-    <rect x="155" y="253" width="39" height="47"/>
-    <rect x="202" y="256" width="34" height="44"/>
-    <rect x="240" y="207" width="41" height="93"/>
-    <rect x="285" y="249" width="35" height="51"/>
-    <rect x="328" y="253" width="41" height="47"/>
-    <rect x="379" y="245" width="46" height="55"/>
-    <rect x="430" y="253" width="48" height="47"/>
-    <rect x="486" y="210" width="46" height="90"/>
-    <rect x="536" y="255" width="35" height="45"/>
+  <!-- starfield -->
+  <g fill="#00F5FF">
+    <circle class="twinkle"   cx="120" cy="60"  r="2.5"/>
+    <circle class="twinkle b" cx="300" cy="40"  r="2"/>
+    <circle class="twinkle c" cx="520" cy="70"  r="2.5"/>
+    <circle class="twinkle b" cx="900" cy="50"  r="2"/>
+    <circle class="twinkle"   cx="1080" cy="80" r="2.5"/>
+    <circle class="twinkle c" cx="1140" cy="200" r="2"/>
+    <circle class="twinkle"   cx="60"  cy="230" r="2"/>
   </g>
-  <g opacity="0.30" fill="#B026FF">
-    <rect x="640" y="243" width="55" height="57"/>
-    <rect x="701" y="242" width="41" height="58"/>
-    <rect x="750" y="221" width="31" height="79"/>
-    <rect x="789" y="237" width="54" height="63"/>
-    <rect x="847" y="236" width="46" height="64"/>
-    <rect x="899" y="190" width="31" height="110"/>
-    <rect x="939" y="253" width="30" height="47"/>
-    <rect x="977" y="197" width="34" height="103"/>
-    <rect x="1020" y="206" width="45" height="94"/>
-    <rect x="1075" y="201" width="38" height="99"/>
-    <rect x="1121" y="214" width="42" height="86"/>
-    <rect x="1169" y="237" width="35" height="63"/>
+  <g fill="#FFD23F">
+    <circle class="twinkle b" cx="220" cy="250" r="2"/>
+    <circle class="twinkle"   cx="760" cy="40"  r="2"/>
+    <circle class="twinkle c" cx="980" cy="250" r="2"/>
   </g>
-  <rect x="0" y="298" width="1200" height="2" fill="#4a3b7a"/>
 
-  <!-- vertical side labels -->
-  <text x="26" y="90" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#00F5FF" opacity="0.55">S</text>
-  <text x="26" y="118" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#00F5FF" opacity="0.55">A</text>
-  <text x="26" y="146" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#00F5FF" opacity="0.55">Y</text>
-  <text x="26" y="174" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#00F5FF" opacity="0.55">A</text>
-  <text x="26" y="202" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#00F5FF" opacity="0.55">K</text>
+  <!-- floating code glyphs -->
+  <g font-family="'JetBrains Mono',monospace" font-weight="700" opacity="0.5">
+    <text class="float"   x="150" y="150" font-size="26" fill="#B026FF">&lt;/&gt;</text>
+    <text class="float b" x="1040" y="140" font-size="24" fill="#00F5FF">{ }</text>
+    <text class="float c" x="1010" y="245" font-size="22" fill="#FFD23F">AI</text>
+    <text class="float b" x="95"  y="250" font-size="20" fill="#00F5FF">def</text>
+  </g>
 
-  <!-- main title -->
-  <text x="600.0" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="66" font-weight="900" letter-spacing="4" fill="url(#titleGrad)" filter="url(#glow)">SAYAK SATPATHI</text>
-  <text x="600.0" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e7e7f5">AI &amp; ML Enthusiast &#8226; Full-Stack Developer &#8226; DevOps Learner</text>
-  <text x="600.0" y="200" text-anchor="middle" font-family="Consolas, monospace" font-size="16" letter-spacing="1" fill="#c084fc">[ BUILDING INTELLIGENT SOLUTIONS FOR A BETTER FUTURE ]</text>
+  <!-- ===== Mascot (original cartoon developer) ===== -->
+  <g class="bob" transform="translate(250,90)">
+    <ellipse cx="60" cy="205" rx="70" ry="12" fill="#000" opacity="0.35"/>
+    <!-- legs -->
+    <rect x="42" y="168" width="14" height="34" rx="6" fill="#F6C79B" stroke="#1a1a1a" stroke-width="3"/>
+    <rect x="66" y="168" width="14" height="34" rx="6" fill="#F6C79B" stroke="#1a1a1a" stroke-width="3"/>
+    <ellipse cx="46" cy="204" rx="13" ry="7" fill="#1f2a44" stroke="#1a1a1a" stroke-width="3"/>
+    <ellipse cx="78" cy="204" rx="13" ry="7" fill="#1f2a44" stroke="#1a1a1a" stroke-width="3"/>
+    <!-- yellow shorts -->
+    <path d="M34 140 h56 v24 q0 8 -8 8 h-12 l-4 -14 -4 14 h-12 q-8 0 -8 -8 z" fill="#FFD23F" stroke="#1a1a1a" stroke-width="3"/>
+    <!-- red shirt -->
+    <path d="M34 96 q26 -14 56 0 v46 h-56 z" fill="#E63946" stroke="#1a1a1a" stroke-width="3"/>
+    <!-- left arm (resting on laptop) -->
+    <rect x="22" y="104" width="16" height="40" rx="8" fill="#E63946" stroke="#1a1a1a" stroke-width="3"/>
+    <circle cx="30" cy="148" r="8" fill="#F6C79B" stroke="#1a1a1a" stroke-width="3"/>
+    <!-- right arm waving -->
+    <g class="wave">
+      <rect x="86" y="100" width="16" height="42" rx="8" fill="#E63946" stroke="#1a1a1a" stroke-width="3"/>
+      <circle cx="94" cy="98" r="9" fill="#F6C79B" stroke="#1a1a1a" stroke-width="3"/>
+    </g>
+    <!-- head -->
+    <ellipse cx="60" cy="60" rx="40" ry="38" fill="#F6C79B" stroke="#1a1a1a" stroke-width="3.5"/>
+    <!-- hair -->
+    <path d="M24 44 q6 -30 36 -32 q30 2 36 32 q-10 -10 -18 -8 q-6 -12 -18 -10 q-12 -2 -18 10 q-10 -2 -18 8 z" fill="#1a1a1a"/>
+    <!-- eyebrows -->
+    <rect x="40" y="44" width="16" height="4" rx="2" fill="#1a1a1a"/>
+    <rect x="66" y="44" width="16" height="4" rx="2" fill="#1a1a1a"/>
+    <!-- eyes -->
+    <g class="blink" style="transform-box:fill-box;transform-origin:center">
+      <ellipse cx="49" cy="58" rx="7" ry="9" fill="#fff" stroke="#1a1a1a" stroke-width="2.5"/>
+      <ellipse cx="73" cy="58" rx="7" ry="9" fill="#fff" stroke="#1a1a1a" stroke-width="2.5"/>
+      <circle cx="50" cy="60" r="3.4" fill="#1a1a1a"/>
+      <circle cx="74" cy="60" r="3.4" fill="#1a1a1a"/>
+    </g>
+    <!-- cheeks + smile -->
+    <circle cx="38" cy="72" r="5" fill="#f2a0a0" opacity="0.7"/>
+    <circle cx="84" cy="72" r="5" fill="#f2a0a0" opacity="0.7"/>
+    <path d="M46 76 q14 14 28 0" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+    <!-- laptop -->
+    <g transform="translate(-6,150)">
+      <rect x="0" y="0" width="70" height="42" rx="5" fill="#11182a" stroke="#00F5FF" stroke-width="2"/>
+      <rect x="6" y="6" width="58" height="30" rx="3" fill="#0a0f1c"/>
+      <text x="12" y="20" font-family="'JetBrains Mono',monospace" font-size="9" fill="#00F5FF">$ code</text>
+      <text x="12" y="31" font-family="'JetBrains Mono',monospace" font-size="9" fill="#B026FF">&gt; build<tspan class="caret" fill="#FFD23F">_</tspan></text>
+      <path d="M-8 42 h86 l-6 8 h-74 z" fill="#1b2336" stroke="#00F5FF" stroke-width="1.5"/>
+    </g>
+  </g>
 
-  <!-- bottom divider glow line -->
-  <rect x="380.0" y="222" width="440" height="2" fill="url(#titleGrad)" opacity="0.8"/>
+  <!-- ===== Name + tagline ===== -->
+  <g transform="translate(470,0)">
+    <ellipse cx="300" cy="150" rx="320" ry="120" fill="url(#glow)"/>
+    <text x="300" y="130" text-anchor="middle" font-size="62" font-weight="800" fill="url(#name)" letter-spacing="2">SAYAK SATPATHI</text>
+    <text x="300" y="172" text-anchor="middle" font-size="22" font-weight="600" fill="#c9d1d9" letter-spacing="4">AI / ML  ·  FULL-STACK  ·  DEVOPS</text>
+    <g font-family="'JetBrains Mono',monospace" font-size="15">
+      <rect x="150" y="196" width="300" height="34" rx="17" fill="#11182a" stroke="#302b63" stroke-width="1.5"/>
+      <text x="300" y="218" text-anchor="middle" fill="#00F5FF">while (alive) { learn(); build(); ship(); }<tspan class="caret" fill="#FFD23F"> |</tspan></text>
+    </g>
+  </g>
 </svg>
