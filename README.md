@@ -1,213 +1,73 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./light.svg">
+  <img src="./dark.svg" alt="Sayak Satpathi — AI/ML and software engineering student" width="100%">
+</picture>
+
+## Hey, I'm Sayak 👋
+
+I'm a **B.Tech CSE (AI & ML)** student at **Sikkim Manipal Institute of Technology (SMIT)**, building across applied AI/ML, software engineering, and cloud-native systems — and learning in the open. I like turning fuzzy problems into tools that **detect, decide, and deploy**, and I care about evidence, correctness, and clean engineering over hype.
+
+### 🎯 What I'm focused on
+
+- **Applied AI/ML** — computer vision, model training, and practical inference pipelines.
+- **Retrieval-Augmented Generation** — grounded answers with citations and honest abstention.
+- **Security & forensics tooling** — tamper-evident, offline-first integrity checks.
+- **Cloud-native engineering** — containers, CI/CD, and GitOps workflows.
+
+### 🧩 Selected Projects
+
+| Project | What it is |
+|---------|------------|
+| **[Log-Guardian](https://github.com/sayaksatpathi/Log-Guardian)** | Offline-first log-integrity monitor with forensic heuristics — streaming scans, timestamp-anomaly detection, baseline analysis, tamper-evident commitments, CLI output, and Docker support. |
+| **[Evidence Protector](https://github.com/sayaksatpathi/Evidence_protector)** | Full-stack distribution of the same log-integrity engine as Log-Guardian — FastAPI backend, web UI, Docker Compose, and release-evidence tooling. |
+| **[RAGBench](https://github.com/sayaksatpathi/RAGBench)** | Adaptive Retrieval-Augmented Generation platform and evaluation harness — evidence-grounded answers with citations, abstention when evidence is thin, and retrieval-strategy comparisons (result on the evaluated corpus is neutral/tied, by design). |
+| **[CyberShield AI](https://github.com/sayaksatpathi/cybershield-ai-streamlit)** | Machine-learning fraud-detection web app — CSV upload, model-based scoring, and an analytics dashboard built with scikit-learn, pandas/NumPy, and Streamlit. |
+| **[TimeCraft](https://github.com/sayaksatpathi/TimeCraft)** | Productivity workspace — tasks, calendar, focus timer, analytics, and an assistant interface, built with React, TypeScript, Vite, MUI, and Radix UI. |
+
+### 🛠️ Tech Stack
+
+**Languages** — Python · C++ · JavaScript · TypeScript · Java · SQL
+
+**AI / Data** — scikit-learn · PyTorch · TensorFlow · OpenCV · NumPy · pandas
+
+**Web** — React · Node.js · Express · FastAPI · Streamlit · Tailwind CSS
+
+**Cloud / DevOps** — Docker · Kubernetes · GitHub Actions · Linux · AWS *(exploring GitOps & MLOps)*
+
+> I use these at a student-builder level — comfortable *working with* the core set, and actively *exploring* the cloud-native tooling.
+
+### 🌱 Open Source
+
+- **Kubeflow Pipelines — [#14919](https://github.com/kubeflow/pipelines/issues/14919)** *(work in progress):* investigating misleading local-pipeline error chains; a focused test run passes locally. Not yet merged — tracking it openly.
+
+You can browse everything I'm doing on my **[public contributions](https://github.com/sayaksatpathi)**.
+
+### 📊 GitHub Activity
+
 <div align="center">
-
-<img src="hero_banner.svg" width="100%" alt="Sayak Satpathi — AI/ML · Full-Stack · DevOps" />
-
-<br/>
-
-<img src="shinchan.svg" width="190" align="center" alt="Shinchan — hand-coded in Python turtle, now animated" />
-&nbsp;&nbsp;&nbsp;
-<img src="cube.svg" width="360" alt="Floating 3D isometric tech cube with an orbiting ring" />
-
-<sub><i>Shinchan is drawn entirely in Python <code>turtle</code> — see <a href="scripts/shinchan_turtle.py">scripts/shinchan_turtle.py</a></i></sub>
-
-<br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&pause=1000&color=00F5FF&center=true&vCenter=true&width=620&height=50&lines=AI+%2F+ML+Engineer+in+the+making;Full-Stack+Developer+%7C+MLOps+explorer;I+turn+chai+into+clean+commits;Building+things+that+detect%2C+decide+%26+deploy" alt="Typing animation" />
-
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=sayaksatpathi&label=VISITORS&color=1a1a2e&style=for-the-badge&labelColor=1a1a2e" height="32" alt="Profile views"/>
-<img src="https://img.shields.io/github/followers/sayaksatpathi?label=FOLLOWERS&style=for-the-badge&color=B026FF&labelColor=1a1a2e" height="32" alt="GitHub followers"/>
-<img src="https://img.shields.io/badge/dynamic/json?color=FFD700&label=STARS&style=for-the-badge&labelColor=1a1a2e&query=%24.stars&url=https%3A%2F%2Fapi.github-star-counter.workers.dev%2Fuser%2Fsayaksatpathi" height="32" alt="Total stars"/>
-<img src="https://img.shields.io/badge/REPOS-45%2B-00F5FF?style=for-the-badge&labelColor=1a1a2e" height="32" alt="Repositories"/>
-
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sayaksatpathi&show_icons=true&hide_border=true&theme=tokyonight&title_color=22D3EE&icon_color=7C3AED" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sayaksatpathi&layout=compact&hide_border=true&theme=tokyonight&title_color=22D3EE" alt="Top languages" />
 </div>
 
-<br/>
-
+<!--
+  Contribution snake — the images below appear only AFTER the
+  "Generate Contribution Snake" workflow runs once and creates the `output` branch.
+  One-time setup: Settings → Actions → General → Workflow permissions →
+  enable "Read and write permissions", then run the workflow once (Actions tab → Run workflow).
+-->
 <div align="center">
-<img src="terminal_card.svg" width="48%" alt="Terminal: whoami" />
-<img src="about_card.svg" width="48%" alt="About me" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sayaksatpathi/sayaksatpathi/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sayaksatpathi/sayaksatpathi/output/github-snake.svg">
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sayaksatpathi/sayaksatpathi/output/github-snake.svg">
+  </picture>
 </div>
 
-<br/>
+### 🔗 Connect
 
-<div align="center">
-
-## ⚡ Tech Stack
-
-</div>
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-**AI / ML**
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-
-**Web Development**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-**DevOps / Cloud**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-
-**Tools**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
-<br/>
-
-<div align="center">
-
-## 🖍️ Featured Projects
-
-</div>
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### 🚦 Smart Traffic AI
-YOLO-based intelligent traffic monitoring system for real-time vehicle detection, traffic analytics, and accident detection.
-
-`Python` `YOLOv8` `OpenCV` `Deep Learning`
-
-[📂 Repositories](https://github.com/sayaksatpathi?tab=repositories)
-
-</td>
-<td width="33%" valign="top">
-
-### 💰 PocketPilot
-Personal finance tracker to manage expenses, set budgets, and visualize spending with beautiful dashboards.
-
-`React` `Node.js` `MongoDB` `Chart.js`
-
-[📂 Repositories](https://github.com/sayaksatpathi?tab=repositories)
-
-</td>
-<td width="33%" valign="top">
-
-### 🛡️ CyberShield AI
-AI-powered fraud detection system using ML models to identify and prevent suspicious activities.
-
-`Python` `Machine Learning` `Streamlit` `scikit-learn`
-
-[📂 GitHub Repo](https://github.com/sayaksatpathi/cybershield-ai-streamlit)
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<div align="center">
-
-## 📊 GitHub Analytics
-
-<img src="https://github-readme-stats.vercel.app/api?username=sayaksatpathi&show_icons=true&theme=radical&bg_color=0d1117&title_color=00F5FF&icon_color=B026FF&text_color=c9d1d9&border_color=302b63&hide_border=false" width="48%" alt="GitHub stats" />
-<img src="https://streak-stats.demolab.com?user=sayaksatpathi&theme=radical&background=0d1117&border=302b63&ring=B026FF&fire=FFD700&currStreakLabel=00F5FF" width="48%" alt="GitHub streak" />
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sayaksatpathi&layout=compact&theme=radical&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&border_color=302b63&hide_border=false" width="95%" alt="Top languages" />
-
-<br/><br/>
-
-### 🐍 Watch the snake eat my contributions
-
-<img src="https://raw.githubusercontent.com/sayaksatpathi/sayaksatpathi/output/snake-dark.svg" width="95%" alt="Contribution snake animation" />
-
-<br/><br/>
-
-### 📈 Contribution Graph
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sayaksatpathi&theme=react-dark&bg_color=0d1117&color=00F5FF&line=B026FF&point=FFD700&hide_border=true" width="95%" alt="Contribution activity graph" />
-
-</div>
-
-<br/>
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### 🏆 Achievements Timeline
-- **2024** — Started my journey in AI & ML
-- **2024** — Built my first ML model
-- **2025** — Deployed my first full-stack app
-- **2025** — Contributed to open source
-- **2025** — Exploring DevOps & Cloud
-- **2026** — And the journey continues... 🚀
-
-</td>
-<td width="33%" valign="top">
-
-### 🗺️ Learning Roadmap
-- ✅ **Foundations** — DSA, OS, DBMS, CN
-- ✅ **Web Development** — HTML, CSS, JS, React, Node
-- 🔄 **AI / ML** — ML, DL, CV, NLP
-- 🔄 **DevOps** — Docker, Kubernetes, CI/CD
-- ⏳ **Cloud** — AWS, Serverless, Monitoring
-- ⏳ **System Design** — Scalability, Microservices
-
-</td>
-<td width="33%" valign="top">
-
-### 🎯 Current Focus
-
-```java
-while (learning) {
-    build();
-    break_things();
-    fix_them();
-    learn();
-    repeat();
-}
-
-// Consistency > Motivation
-// Progress > Perfection
-```
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<div align="center">
-
-## 🌐 Let's Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sayaksatpathi)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sayaksatpathi)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sayaksatpathi12@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sayak.antideploy.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0B1220?style=for-the-badge&logo=vercel&logoColor=white)](https://sayaksatpathi.github.io/portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sayaksatpathi)
 
-**Let's build something amazing together! 💡**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%" alt=""/>
-
-</div>
+<sub>P.S. — I also drew a little <a href="./shinchan.svg">Shinchan in pure Python <code>turtle</code></a>, just for fun. 🖍️</sub>
