@@ -52,22 +52,12 @@ Evidence-**grounded answers** with citations — and honest **abstention** when 
 <tr>
 <td width="50%" valign="top">
 
-#### 🛡️ [Log-Guardian](https://github.com/sayaksatpathi/Log-Guardian)
-Offline-first **log-integrity monitor** with forensic heuristics — streaming scans, timestamp-anomaly detection, baseline analysis, tamper-evident commitments, and a CLI.
+#### 🛰️ [SAKSHYA](https://github.com/sayaksatpathi/SAKSHYA)
+Vendor-agnostic **CCTV forensic evidence platform** — evidence ingestion, AI triage, cross-camera re-ID, deleted-clip recovery, and a tamper-evident cryptographic chain-of-custody. FastAPI + React, CI-green with a full test suite.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Forensics](https://img.shields.io/badge/Forensics-7C3AED?style=flat-square)
-
-</td>
-<td width="50%" valign="top">
-
-#### 🔒 [Evidence Protector](https://github.com/sayaksatpathi/Evidence_protector)
-Full-stack distribution of the **same integrity engine** as Log-Guardian — FastAPI backend, web UI, Docker Compose, and release-evidence tooling.
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Docker](https://img.shields.io/badge/Compose-2496ED?style=flat-square&logo=docker&logoColor=white) ![Web](https://img.shields.io/badge/Web_UI-22D3EE?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 #### 🔎 [RAGBench](https://github.com/sayaksatpathi/RAGBench)
@@ -76,30 +66,40 @@ Adaptive **RAG platform + evaluation harness** — grounded answers with citatio
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![RAG](https://img.shields.io/badge/RAG-7C3AED?style=flat-square) ![Eval](https://img.shields.io/badge/Evaluation-10B981?style=flat-square)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
-#### 🛰️ [CyberShield AI](https://github.com/sayaksatpathi/cybershield-ai-streamlit)
-**ML fraud-detection** web app — CSV upload, model-based scoring, and an analytics dashboard.
+#### ⚙️ [OpsForge](https://github.com/sayaksatpathi/opsforge-platform)
+Cloud-native **DevSecOps & SRE platform** — code → test → sign → GitOps deploy → observe, with SLOs, burn-rate alerting, tracing, and chaos. Operator-verified on real AWS + a kind cluster.
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+#### 🛡️ [Log-Guardian](https://github.com/sayaksatpathi/Log-Guardian)
+Offline-first **log-integrity monitor** with forensic heuristics — streaming scans, timestamp-anomaly detection, baseline analysis, tamper-evident commitments, and a CLI.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Forensics](https://img.shields.io/badge/Forensics-7C3AED?style=flat-square)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### ⏳ [TimeCraft](https://github.com/sayaksatpathi/TimeCraft)
-**Productivity workspace** — tasks, calendar, focus timer, analytics, and an assistant interface.
+#### 🚁 [AeroMinds](https://github.com/sayaksatpathi/AeroMinds)
+**Aerial waste intelligence** — a fine-tuned **YOLOv8** detector that spots illegal dumping from drone footage and scores severity. 🏆 *ELCIA Next-Gen Tech Hackathon — 2nd Runner-Up (top 3 of 180+ teams).*
 
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![YOLOv8](https://img.shields.io/badge/YOLOv8-111F68?style=flat-square&logo=ultralytics&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
 
-#### 🛰️ [SAKSHYA](https://github.com/sayaksatpathi/SAKSHYA)
-Vendor-agnostic **CCTV forensic evidence platform** — evidence ingestion, AI triage, deleted-clip recovery, and tamper-evident cryptographic chain-of-custody.
+#### ☁️ [AWS EKS GitOps Lab](https://github.com/sayaksatpathi/AWS-EKS-GitOps-Production-Lab-)
+Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terraform, CI/CD via GitHub Actions + OIDC, Argo CD delivery, Prometheus/Grafana/Loki observability, and demonstrated rollback.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/EKS-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
 
 </td>
 </tr>
