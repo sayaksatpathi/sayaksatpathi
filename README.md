@@ -209,13 +209,11 @@ Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terr
 
 <div align="center">
 
-<img src="shinchan.svg" width="120" alt="Shinchan drawn in Python turtle" />
+<img src="shinchan.svg" width="230" alt="Shinchan drawn in Python turtle" />
 
 ### ✨ Thanks for visiting my profile! ✨
 
 **If you made it this far — let's build something great together.** 🚀
-
-<sub>…and yes, that little guy is <b>Shinchan</b>, drawn entirely in Python <code>turtle</code> — <a href="scripts/shinchan_turtle.py">source</a>. 🖍️</sub>
 
 <br/>
 
