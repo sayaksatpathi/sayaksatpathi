@@ -91,12 +91,28 @@ A little **Shinchan drawn entirely in Python `turtle`** — hand-plotted paths, 
 
 > I use these at a student-builder level — comfortable *working with* the core set (Python, FastAPI, React/TS, Docker), and actively *exploring* cloud-native tooling (Kubernetes, GitOps, MLOps). Also: scikit-learn · NumPy · pandas · Streamlit.
 
-### 🌱 Open Source
+### 🌱 Open-Source Contributions
 
-> **Kubeflow Pipelines — [#14919](https://github.com/kubeflow/pipelines/issues/14919)** &nbsp;·&nbsp; *work in progress*
-> Investigating misleading local-pipeline error chains; a focused test run passes locally. **Not yet merged** — tracking it openly.
+![PRs merged](https://img.shields.io/badge/PRs_merged_upstream-6-10B981?style=flat-square&logo=git&logoColor=white) ![Projects](https://img.shields.io/badge/projects-mlflow_·_ultralytics_·_kubernetes_·_cloud--custodian_·_cfn--lint-7C3AED?style=flat-square)
 
-You can browse everything I'm doing on my **[public contributions](https://github.com/sayaksatpathi)**.
+**Merged into upstream projects** 🟢
+
+| Project | What I fixed | PR |
+|---------|--------------|----|
+| **mlflow/mlflow** | `format_prompt` was replacing placeholders that appear inside variable values | [#26807](https://github.com/mlflow/mlflow/pull/26807) |
+| **ultralytics/ultralytics** | Skip `torch.compile` on CUDA when Triton is unavailable | [#26701](https://github.com/ultralytics/ultralytics/pull/26701) |
+| **kubernetes-client/python** | Relax the `certifi` lower bound and stop Dependabot raising it | [#2745](https://github.com/kubernetes-client/python/pull/2745) |
+| **cloud-custodian/cloud-custodian** | Skip `ROLLBACK_COMPLETE` stacks in AWS CFN tag actions | [#11215](https://github.com/cloud-custodian/cloud-custodian/pull/11215) |
+| **aws-cloudformation/cfn-lint** | Validate `--registry-schemas` types against their schema | [#4763](https://github.com/aws-cloudformation/cfn-lint/pull/4763) |
+| **aws-cloudformation/cfn-lint** | Check the length of a `Description` that uses a dynamic reference | [#4765](https://github.com/aws-cloudformation/cfn-lint/pull/4765) |
+
+**In review (open PRs)** 🟡
+
+- **KServe** — Python-client fixes: [#6405](https://github.com/kserve/kserve/pull/6405) · [#6407](https://github.com/kserve/kserve/pull/6407) · [#6414](https://github.com/kserve/kserve/pull/6414) · [#6521](https://github.com/kserve/kserve/pull/6521)
+- **mlflow/mlflow** — always load model config as UTF-8: [#27008](https://github.com/mlflow/mlflow/pull/27008)
+- **kubeflow/docs-agent** — [#283](https://github.com/kubeflow/docs-agent/pull/283) · [#285](https://github.com/kubeflow/docs-agent/pull/285)
+
+<sub>All links are public PRs — browse everything on my <a href="https://github.com/sayaksatpathi">profile</a>.</sub>
 
 ### 🐍 GitHub Activity
 
@@ -112,13 +128,6 @@ You can browse everything I'm doing on my **[public contributions](https://githu
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sayaksatpathi/sayaksatpathi/output/github-snake.svg">
   <img alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/sayaksatpathi/sayaksatpathi/output/github-snake.svg" width="100%">
 </picture>
-
-<br/>
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=sayaksatpathi&show_icons=true&hide_border=true&theme=tokyonight&title_color=22D3EE&icon_color=7C3AED&bg_color=0B1220" alt="GitHub stats" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sayaksatpathi&layout=compact&hide_border=true&theme=tokyonight&title_color=22D3EE&bg_color=0B1220" alt="Top languages" />
-
-<sub>Stats cards are served by a third-party; if one is slow to load, the snake above always renders.</sub>
 
 </div>
 
