@@ -120,6 +120,12 @@ Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terr
 
 > I use these at a student-builder level — comfortable *working with* the core set (Python, FastAPI, React/TS, Docker), and actively *exploring* cloud-native tooling (Kubernetes, GitOps, MLOps). Also: scikit-learn · NumPy · pandas · Streamlit.
 
+### 🖥️ From my terminal
+
+<div align="center">
+<img src="terminal.svg" width="92%" alt="Animated terminal: whoami, git log, and today's status" />
+</div>
+
 ### 🌱 Open-Source Contributions
 
 ![PRs merged](https://img.shields.io/badge/PRs_merged_upstream-6-10B981?style=flat-square&logo=git&logoColor=white) ![Projects](https://img.shields.io/badge/projects-mlflow_·_ultralytics_·_kubernetes_·_cloud--custodian_·_cfn--lint-7C3AED?style=flat-square)
@@ -143,7 +149,28 @@ Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terr
 
 <sub>All links are public PRs — browse everything on my <a href="https://github.com/sayaksatpathi">profile</a>.</sub>
 
-### 🐍 GitHub Activity
+### 📊 GitHub Stats, Grade &amp; Contributions
+
+<div align="center">
+
+<!-- Scorecard with letter grade (rank) -->
+<img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sayaksatpathi&theme=github_dark" alt="GitHub profile summary and grade" />
+
+<br/>
+
+<!-- Commits / PRs / issues / contributions + total contributions & streak -->
+<img height="192" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sayaksatpathi&theme=github_dark" alt="Commits, PRs, issues and contributions" />
+<img height="192" src="https://streak-stats.demolab.com?user=sayaksatpathi&theme=tokyonight&hide_border=true&background=0B1220&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8" alt="Total contributions and commit streak" />
+
+<br/>
+
+<!-- Extras: commits by language + when I'm most productive -->
+<img height="192" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sayaksatpathi&theme=github_dark" alt="Most-used languages by commits" />
+<img height="192" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sayaksatpathi&theme=github_dark&utcOffset=5.5" alt="Most productive time of day" />
+
+</div>
+
+### 🐍 Contribution Graph
 
 <div align="center">
 
