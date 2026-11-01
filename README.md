@@ -96,12 +96,10 @@ Adaptive **RAG platform + evaluation harness** — grounded answers with citatio
 </td>
 <td width="50%" valign="top">
 
-#### ✏️ [Shinchan, in code](./shinchan.svg)
-<img src="shinchan.svg" width="96" align="right" alt="Shinchan drawn in Python turtle" />
+#### 🛰️ [SAKSHYA](https://github.com/sayaksatpathi/SAKSHYA)
+Vendor-agnostic **CCTV forensic evidence platform** — evidence ingestion, AI triage, deleted-clip recovery, and tamper-evident cryptographic chain-of-custody.
 
-A little **Shinchan drawn entirely in Python `turtle`** — hand-plotted paths, rendered to a crisp SVG. Because engineering can be playful too.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![turtle](https://img.shields.io/badge/turtle-graphics-FFD23F?style=flat-square) ![SVG](https://img.shields.io/badge/SVG-vector-E63946?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 
 </td>
 </tr>
@@ -167,7 +165,17 @@ A little **Shinchan drawn entirely in Python `turtle`** — hand-plotted paths, 
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sayaksatpathi)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0B1220?style=for-the-badge&logo=vercel&logoColor=white)](https://sayaksatpathi.github.io/portfolio/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0B1220?style=for-the-badge&logo=vercel&logoColor=white)](https://sayak.antideploy.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sayaksatpathi)
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="shinchan.svg" width="110" alt="Shinchan drawn in Python turtle" />
+
+<sub>Thanks for scrolling. This little guy is <b>Shinchan</b>, drawn entirely in Python <code>turtle</code> — <a href="scripts/shinchan_turtle.py">source</a>. 🖍️</sub>
 
 </div>
