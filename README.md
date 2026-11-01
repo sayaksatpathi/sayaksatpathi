@@ -8,12 +8,43 @@
 
 I'm a **B.Tech CSE (AI & ML)** student at **Sikkim Manipal Institute of Technology (SMIT)**, building across applied AI/ML, software engineering, and cloud-native systems — and learning in the open. I like turning fuzzy problems into tools that **detect, decide, and deploy**, and I care about evidence, correctness, and clean engineering over hype.
 
+![Student](https://img.shields.io/badge/B.Tech-CSE_(AI_&_ML)_·_SMIT-7C3AED?style=flat-square)
+![Location](https://img.shields.io/badge/India-UTC+5:30-22D3EE?style=flat-square&logo=googlemaps&logoColor=white)
+![Open Source](https://img.shields.io/badge/6_PRs-merged_upstream-10B981?style=flat-square&logo=git&logoColor=white)
+![Collab](https://img.shields.io/badge/open_to-collaborate-F59E0B?style=flat-square)
+
 ### 🎯 What I'm focused on
 
-- **Applied AI/ML** — computer vision, model training, and practical inference pipelines.
-- **Retrieval-Augmented Generation** — grounded answers with citations and honest abstention.
-- **Security & forensics tooling** — tamper-evident, offline-first integrity checks.
-- **Cloud-native engineering** — containers, CI/CD, and GitOps workflows.
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🧠 Applied AI/ML
+Computer vision, model training, and practical **inference pipelines** that hold up outside a notebook.
+
+</td>
+<td width="50%" valign="top">
+
+#### 🔎 Retrieval-Augmented Generation
+Evidence-**grounded answers** with citations — and honest **abstention** when the evidence is thin.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🛡️ Security &amp; Forensics
+**Tamper-evident**, offline-first integrity checks and forensic heuristics.
+
+</td>
+<td width="50%" valign="top">
+
+#### ☁️ Cloud-Native Engineering
+**Containers, CI/CD, and GitOps** — shipping software the reproducible way.
+
+</td>
+</tr>
+</table>
 
 ### 🧩 Selected Projects
 
