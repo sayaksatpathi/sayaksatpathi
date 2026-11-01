@@ -174,8 +174,16 @@ Vendor-agnostic **CCTV forensic evidence platform** — evidence ingestion, AI t
 
 <div align="center">
 
-<img src="shinchan.svg" width="110" alt="Shinchan drawn in Python turtle" />
+<img src="shinchan.svg" width="120" alt="Shinchan drawn in Python turtle" />
 
-<sub>Thanks for scrolling. This little guy is <b>Shinchan</b>, drawn entirely in Python <code>turtle</code> — <a href="scripts/shinchan_turtle.py">source</a>. 🖍️</sub>
+### ✨ Thanks for visiting my profile! ✨
+
+**If you made it this far — let's build something great together.** 🚀
+
+<sub>…and yes, that little guy is <b>Shinchan</b>, drawn entirely in Python <code>turtle</code> — <a href="scripts/shinchan_turtle.py">source</a>. 🖍️</sub>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:3b82f6,100:22D3EE&height=120&section=footer&text=See%20you%20in%20the%20commits%20%F0%9F%91%8B&fontSize=22&fontColor=ffffff&fontAlignY=78" width="100%" alt="Thanks for visiting — see you in the commits" />
 
 </div>
