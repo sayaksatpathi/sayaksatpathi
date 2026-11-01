@@ -209,7 +209,7 @@ Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terr
 
 <div align="center">
 
-<img src="shinchan.svg" width="230" alt="Shinchan drawn in Python turtle" />
+<img src="shinchan-bye.svg" width="340" alt="Shinchan waving goodbye — 'Bye! see you in the commits'" />
 
 ### ✨ Thanks for visiting my profile! ✨
 
