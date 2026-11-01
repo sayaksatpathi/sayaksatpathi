@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>sayak@dev — interactive terminal</title>
+<meta name="description" content="An interactive terminal to explore Sayak Satpathi's profile — type commands to learn more." />
+<style>
+  :root{
+    --bg:#07111F; --panel:#0B1220; --bar:#0F172A; --border:#1e2b44;
+    --txt:#F8FAFC; --muted:#94A3B8; --cyan:#22D3EE; --violet:#7C3AED; --green:#10B981; --amber:#F59E0B; --red:#ff5f56;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#171436 0%,var(--bg) 60%);
+    font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--txt);
+    display:flex;align-items:center;justify-content:center;padding:24px}
+  .win{width:min(900px,96vw);height:min(600px,86vh);background:var(--panel);border:1px solid var(--border);
+    border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.55);display:flex;flex-direction:column;overflow:hidden}
+  .bar{height:44px;background:var(--bar);display:flex;align-items:center;gap:8px;padding:0 16px;flex:0 0 auto}
+  .dot{width:12px;height:12px;border-radius:50%}
+  .title{flex:1;text-align:center;color:var(--muted);font-size:13px}
+  .scr{flex:1;overflow-y:auto;padding:18px;font-size:14.5px;line-height:1.6}
+  .scr::-webkit-scrollbar{width:10px}.scr::-webkit-scrollbar-thumb{background:#223; border-radius:6px}
+  .row{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+  .prompt{color:var(--green);white-space:nowrap}
+  .cmd{color:var(--txt)}
+  .out{margin:4px 0 14px;color:var(--muted);white-space:pre-wrap}
+  .out b{color:var(--txt)} .c{color:var(--cyan)} .v{color:var(--violet)} .g{color:var(--green)} .a{color:var(--amber)}
+  a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+  .inrow{display:flex;gap:8px;align-items:baseline;padding:0 18px 18px}
+  #in{flex:1;background:transparent;border:0;outline:0;color:var(--txt);font:inherit;caret-color:var(--cyan)}
+  .hint{color:var(--muted)} .grade-big{font-size:40px;font-weight:800;color:var(--green)}
+  @media (prefers-reduced-motion:no-preference){.blink{animation:bk 1.05s step-end infinite}}
+  @keyframes bk{50%{opacity:0}}
+</style>
+</head>
+<body>
+<div class="win" role="application" aria-label="Interactive terminal">
+  <div class="bar">
+    <span class="dot" style="background:var(--red)"></span>
+    <span class="dot" style="background:var(--amber)"></span>
+    <span class="dot" style="background:var(--green)"></span>
+    <span class="title">sayak@dev: ~/profile — zsh</span>
+  </div>
+  <div class="scr" id="scr"></div>
+  <div class="inrow">
+    <span class="prompt">sayak@dev <span class="c">~</span> $</span>
+    <input id="in" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="terminal input" />
+    <span class="blink">▋</span>
+  </div>
+</div>
+<script>
+const scr = document.getElementById('scr');
+const inp = document.getElementById('in');
+const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+const DATA = {
+  name:"Sayak Satpathi",
+  edu:"B.Tech CSE (AI & ML) · Sikkim Manipal Institute of Technology (SMIT)",
+  // snapshot of real public stats (from GitHub profile summary) — used for the grade
+  stats:{ contributions:876, commits:814, prs:20, prsMerged:6, issues:6, contributedTo:43, publicRepos:25, since:"May 2024" },
+  projects:[
+    ["SAKSHYA","Vendor-agnostic CCTV forensic evidence platform (AI + crypto custody)","https://github.com/sayaksatpathi/SAKSHYA"],
+    ["RAGBench","Adaptive RAG platform + evaluation harness","https://github.com/sayaksatpathi/RAGBench"],
+    ["OpsForge","Cloud-native DevSecOps/SRE platform (verified on real AWS)","https://github.com/sayaksatpathi/opsforge-platform"],
+    ["Log-Guardian","Offline-first log-integrity + forensic heuristics","https://github.com/sayaksatpathi/Log-Guardian"],
+    ["AeroMinds","YOLOv8 aerial waste detection — hackathon 2nd runner-up","https://github.com/sayaksatpathi/AeroMinds"],
+    ["AWS EKS GitOps Lab","Kubernetes GitOps on real AWS (Terraform + Argo CD)","https://github.com/sayaksatpathi/AWS-EKS-GitOps-Production-Lab-"],
+  ],
+  ossMerged:[
+    ["mlflow/mlflow #26807","https://github.com/mlflow/mlflow/pull/26807"],
+    ["ultralytics/ultralytics #26701","https://github.com/ultralytics/ultralytics/pull/26701"],
+    ["kubernetes-client/python #2745","https://github.com/kubernetes-client/python/pull/2745"],
+    ["cloud-custodian #11215","https://github.com/cloud-custodian/cloud-custodian/pull/11215"],
+    ["aws-cloudformation/cfn-lint #4763","https://github.com/aws-cloudformation/cfn-lint/pull/4763"],
+    ["aws-cloudformation/cfn-lint #4765","https://github.com/aws-cloudformation/cfn-lint/pull/4765"],
+  ],
+};
+
+function computeGrade(s){
+  // transparent activity rubric (0-100) vs. fixed "very active dev / year" benchmarks;
+  // NOT an academic grade. Benchmarks: 1000 commits, 50 weighted PRs, 50 repos, 1000 contribs.
+  const c = Math.min(35, s.commits/1000*35);                 // commit volume
+  const p = Math.min(25, (s.prsMerged*3 + s.prs)/50*25);     // PRs, merged weighted
+  const o = Math.min(20, s.contributedTo/50*20);             // breadth of collaboration
+  const k = Math.min(20, s.contributions/1000*20);           // sustained contributions
+  const score = Math.round(c+p+o+k);
+  const letter = score>=92?"A+":score>=85?"A":score>=78?"A-":score>=70?"B+":score>=62?"B":score>=55?"B-":"C";
+  return {score, letter};
+}
+
+function print(html){ const d=document.createElement('div'); d.innerHTML=html; scr.appendChild(d); scr.scrollTop=scr.scrollHeight; }
+function echo(cmd){ print(`<div class="row"><span class="prompt">sayak@dev <span class="c">~</span> $</span> <span class="cmd">${esc(cmd)}</span></div>`); }
+
+const COMMANDS = {
+  help(){ return `Available commands:
+  <b>whoami</b>      who I am           <b>projects</b>   featured work
+  <b>about</b>       the short story    <b>oss</b>        open-source PRs
+  <b>skills</b>      my tech stack      <b>grade</b>      my activity grade
+  <b>education</b>   where I study      <b>contact</b>    links & socials
+  <b>stats</b>       github numbers     <b>clear</b>      clear the screen
+Tip: use <b>↑/↓</b> for history, <b>Tab</b> to autocomplete.`; },
+  whoami(){ return `<b class="c">${DATA.name}</b> — AI/ML & software-engineering student, open-source contributor.
+${DATA.edu}. Building across AI/ML, software, and cloud-native systems — learning in the open.`; },
+  about(){ return `I turn fuzzy problems into tools that <b>detect, decide, and deploy</b>.
+I care about evidence, correctness, and clean engineering over hype.`; },
+  education(){ return `🎓 ${DATA.edu}`; },
+  skills(){ return `<b>Languages</b>   Python · C++ · JavaScript · TypeScript · Java · SQL
+<b>AI / ML</b>     PyTorch · TensorFlow · OpenCV · scikit-learn · NumPy · pandas
+<b>Web</b>         React · Node.js · Express · FastAPI · Streamlit · Tailwind
+<b>Cloud/Ops</b>   Docker · Kubernetes · AWS · GitHub Actions · Linux  (exploring GitOps, MLOps)`; },
+  projects(){ return DATA.projects.map(([n,d,u])=>`<b class="c">${n}</b> — ${d}\n  <a href="${u}" target="_blank" rel="noopener">${u}</a>`).join("\n\n"); },
+  oss(){ return `<b class="g">Merged into upstream projects</b> (6):\n`+
+    DATA.ossMerged.map(([n,u])=>`  ✓ <a href="${u}" target="_blank" rel="noopener">${n}</a>`).join("\n")+
+    `\n\nAlso in review: KServe ×4, mlflow #27008, kubeflow/docs-agent ×2.`; },
+  stats(){ const s=DATA.stats; return `📊 GitHub (snapshot, since ${s.since})
+  Contributions (year): <b>${s.contributions}</b>
+  Commits: <b>${s.commits}</b>   ·   PRs: <b>${s.prs}</b> (<b class="g">${s.prsMerged} merged upstream</b>)
+  Issues: <b>${s.issues}</b>   ·   Contributed to: <b>${s.contributedTo}</b> repos   ·   Public repos: <b>${s.publicRepos}</b>`; },
+  grade(){ const g=computeGrade(DATA.stats);
+    return `<span class="grade-big">${g.letter}</span>   <span class="hint">activity grade · score ${g.score}/100</span>
+
+Based on a transparent rubric (not an academic grade):
+  commit volume · PRs (merged weighted) · collaboration breadth · sustained contributions
+Numbers: ${DATA.stats.commits} commits · ${DATA.stats.prsMerged}/${DATA.stats.prs} PRs merged · ${DATA.stats.contributedTo} repos · ${DATA.stats.contributions} contributions/yr.`; },
+  contact(){ return `🔗 GitHub    <a href="https://github.com/sayaksatpathi" target="_blank" rel="noopener">github.com/sayaksatpathi</a>
+🌐 Portfolio <a href="https://sayak.antideploy.com/" target="_blank" rel="noopener">sayak.antideploy.com</a>
+💼 LinkedIn  <a href="https://linkedin.com/in/sayaksatpathi" target="_blank" rel="noopener">linkedin.com/in/sayaksatpathi</a>
+✉️  Email     sayaksatpathi12 [at] gmail.com`; },
+  clear(){ scr.innerHTML=""; return ""; },
+  sudo(){ return `Nice try 😄 — you already have root here.`; },
+};
+const NAMES = Object.keys(COMMANDS);
+
+function run(raw){
+  const cmd = raw.trim(); if(!cmd) return;
+  echo(cmd);
+  const key = cmd.split(/\s+/)[0].toLowerCase();
+  if(key in COMMANDS){ const out = COMMANDS[key](); if(out) print(`<div class="out">${out}</div>`); }
+  else print(`<div class="out">command not found: <b>${esc(key)}</b> — type <b>help</b> to see what I can do.</div>`);
+}
+
+// history
+const hist=[]; let hi=-1;
+inp.addEventListener('keydown', e=>{
+  if(e.key==='Enter'){ const v=inp.value; if(v.trim()){hist.push(v); hi=hist.length;} run(v); inp.value=''; }
+  else if(e.key==='ArrowUp'){ if(hi>0){hi--; inp.value=hist[hi]; e.preventDefault();} }
+  else if(e.key==='ArrowDown'){ if(hi<hist.length-1){hi++; inp.value=hist[hi];} else {hi=hist.length; inp.value='';} }
+  else if(e.key==='Tab'){ e.preventDefault(); const p=inp.value.trim().toLowerCase(); const m=NAMES.filter(n=>n.startsWith(p)); if(m.length===1) inp.value=m[0]; }
+});
+document.addEventListener('click', ()=>inp.focus());
+
+// boot
+print(`<div class="out"><b class="c">Welcome to Sayak's interactive terminal.</b>
+Type <b>help</b> and hit Enter to begin. (try: <b>whoami</b>, <b>projects</b>, <b>grade</b>, <b>oss</b>)</div>`);
+COMMANDS.whoami && run('whoami');
+inp.focus();
+</script>
+</body>
+</html>

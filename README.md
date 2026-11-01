@@ -124,6 +124,10 @@ Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terr
 
 <div align="center">
 <img src="terminal.svg" width="92%" alt="Animated terminal: whoami, git log, and today's status" />
+
+[![Try the interactive terminal](https://img.shields.io/badge/▶_Try_the_interactive_terminal-type_real_commands-22D3EE?style=for-the-badge&logo=gnometerminal&logoColor=black)](https://sayaksatpathi.github.io/sayaksatpathi/)
+
+<sub>A real, typeable terminal — run <code>help</code>, <code>projects</code>, <code>oss</code>, <code>grade</code>… (GitHub READMEs can't run JS, so it lives on GitHub Pages.)</sub>
 </div>
 
 ### 🌱 Open-Source Contributions
@@ -152,6 +156,10 @@ Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terr
 ### 📊 GitHub Stats, Grade &amp; Contributions
 
 <div align="center">
+
+[![Activity Grade](https://img.shields.io/badge/Activity_Grade-A--_·_82%2F100-10B981?style=for-the-badge&logo=github&logoColor=white)](https://sayaksatpathi.github.io/sayaksatpathi/)
+
+<sub>Activity grade from a transparent rubric (commits · PRs merged · collaboration breadth · sustained contributions) — see the live calc via <code>grade</code> in the <a href="https://sayaksatpathi.github.io/sayaksatpathi/">interactive terminal</a>. Not an academic grade.</sub>
 
 <!-- Scorecard with letter grade (rank) -->
 <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sayaksatpathi&theme=github_dark" alt="GitHub profile summary and grade" />
