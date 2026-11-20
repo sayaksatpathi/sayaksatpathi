@@ -6,41 +6,33 @@
 
 ## Hey, I'm Sayak 👋
 
-I'm a **B.Tech CSE (AI & ML)** student at **Sikkim Manipal Institute of Technology (SMIT)**, building across applied AI/ML, software engineering, and cloud-native systems — and learning in the open. I like turning fuzzy problems into tools that **detect, decide, and deploy**, and I care about evidence, correctness, and clean engineering over hype.
+I'm a **B.Tech CSE (AI & ML)** student at **Sikkim Manipal Institute of Technology (SMIT)**, looking for **fresher / intern roles in MLOps, SRE / DevOps and AI / ML** (remote, anywhere). I like the part after the notebook: serving models, gating releases on evaluation, and running the infrastructure underneath with SLOs, GitOps and tested rollbacks. Evidence, correctness and clean engineering over hype.
 
 ![Student](https://img.shields.io/badge/B.Tech-CSE_(AI_&_ML)_·_SMIT-7C3AED?style=flat-square)
 ![Location](https://img.shields.io/badge/India-UTC+5:30-22D3EE?style=flat-square&logo=googlemaps&logoColor=white)
 ![Open Source](https://img.shields.io/badge/6_PRs-merged_upstream-10B981?style=flat-square&logo=git&logoColor=white)
-![Collab](https://img.shields.io/badge/open_to-collaborate-F59E0B?style=flat-square)
+![Open to](https://img.shields.io/badge/open_to-MLOps_·_SRE%2FDevOps_·_AI%2FML_roles-F59E0B?style=flat-square)
 
-### 🎯 What I'm focused on
+### 🎯 Roles I'm targeting
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-#### 🧠 Applied AI/ML
-Computer vision, model training, and practical **inference pipelines** that hold up outside a notebook.
-
-</td>
-<td width="50%" valign="top">
-
-#### 🔎 Retrieval-Augmented Generation
-Evidence-**grounded answers** with citations — and honest **abstention** when the evidence is thin.
+#### ⚙️ MLOps / ML Platform
+Model **serving, evaluation gates and release safety**. Contributor to **MLflow** and **KServe**; built [RAGBench](https://github.com/sayaksatpathi/RAGBench), an eval harness that blocks a config unless it beats a known-good baseline.
 
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-#### 🛡️ Security &amp; Forensics
-**Tamper-evident**, offline-first integrity checks and forensic heuristics.
+#### 🛡️ SRE / DevOps / Cloud
+**SLOs, burn-rate alerting, GitOps and chaos drills** on real AWS. Terraform + EKS + Argo CD, GitHub OIDC (no long-lived keys), merged PRs to the **Kubernetes Python client**, **Cloud Custodian** and **cfn-lint**.
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-#### ☁️ Cloud-Native Engineering
-**Containers, CI/CD, and GitOps** — shipping software the reproducible way.
+#### 🧠 AI / ML
+Computer vision and **inference pipelines that hold up outside a notebook**: fine-tuned YOLOv8 (hackathon top 3 of 180+), evidence-grounded RAG with honest abstention, and a fix merged into **Ultralytics**.
 
 </td>
 </tr>
@@ -52,10 +44,10 @@ Evidence-**grounded answers** with citations — and honest **abstention** when 
 <tr>
 <td width="50%" valign="top">
 
-#### 🛰️ [SAKSHYA](https://github.com/sayaksatpathi/SAKSHYA)
-Vendor-agnostic **CCTV forensic evidence platform** — evidence ingestion, AI triage, cross-camera re-ID, deleted-clip recovery, and a tamper-evident cryptographic chain-of-custody. FastAPI + React, CI-green with a full test suite.
+#### ⚙️ [OpsForge](https://github.com/sayaksatpathi/opsforge-platform)
+Cloud-native **DevSecOps & SRE platform** — code → test → sign → GitOps deploy → observe, with SLOs, burn-rate alerting, tracing, and chaos. Operator-verified on real AWS + a kind cluster.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
@@ -70,18 +62,18 @@ Adaptive **RAG platform + evaluation harness** — grounded answers with citatio
 <tr>
 <td width="50%" valign="top">
 
-#### ⚙️ [OpsForge](https://github.com/sayaksatpathi/opsforge-platform)
-Cloud-native **DevSecOps & SRE platform** — code → test → sign → GitOps deploy → observe, with SLOs, burn-rate alerting, tracing, and chaos. Operator-verified on real AWS + a kind cluster.
+#### ☁️ [AWS EKS GitOps Lab](https://github.com/sayaksatpathi/AWS-EKS-GitOps-Production-Lab-)
+Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terraform, CI/CD via GitHub Actions + OIDC, Argo CD delivery, Prometheus/Grafana/Loki observability, and demonstrated rollback.
 
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/EKS-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
 
-#### 🛡️ [Log-Guardian](https://github.com/sayaksatpathi/Log-Guardian)
-Offline-first **log-integrity monitor** with forensic heuristics — streaming scans, timestamp-anomaly detection, baseline analysis, tamper-evident commitments, and a CLI.
+#### 📟 [Reliability Lab](https://github.com/sayaksatpathi/reliability-lab)
+**SLOs, error budgets and incident response** — a Flask service with RED metrics and golden-signal dashboards, Google-style **multi-window burn-rate alerts**, k6 release gates, chaos tests and runbooks.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Forensics](https://img.shields.io/badge/Forensics-7C3AED?style=flat-square)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![k6](https://img.shields.io/badge/k6-7D64FF?style=flat-square&logo=k6&logoColor=white)
 
 </td>
 </tr>
@@ -96,10 +88,20 @@ Offline-first **log-integrity monitor** with forensic heuristics — streaming s
 </td>
 <td width="50%" valign="top">
 
-#### ☁️ [AWS EKS GitOps Lab](https://github.com/sayaksatpathi/AWS-EKS-GitOps-Production-Lab-)
-Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terraform, CI/CD via GitHub Actions + OIDC, Argo CD delivery, Prometheus/Grafana/Loki observability, and demonstrated rollback.
+#### 🛰️ [SAKSHYA](https://github.com/sayaksatpathi/SAKSHYA)
+Vendor-agnostic **CCTV forensic evidence platform** — evidence ingestion, AI triage, cross-camera re-ID, deleted-clip recovery, and a tamper-evident cryptographic chain-of-custody. FastAPI + React, CI-green with a full test suite.
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/EKS-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🛡️ [Log-Guardian](https://github.com/sayaksatpathi/Log-Guardian)
+Offline-first **log-integrity monitor** with forensic heuristics — streaming scans, timestamp-anomaly detection, baseline analysis, tamper-evident commitments, and a CLI.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Forensics](https://img.shields.io/badge/Forensics-7C3AED?style=flat-square)
 
 </td>
 </tr>
@@ -118,7 +120,7 @@ Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terr
 
 </div>
 
-> I use these at a student-builder level — comfortable *working with* the core set (Python, FastAPI, React/TS, Docker), and actively *exploring* cloud-native tooling (Kubernetes, GitOps, MLOps). Also: scikit-learn · NumPy · pandas · Streamlit.
+> I use these at a student-builder level — comfortable *working with* the core set (Python, FastAPI, React/TS, Docker), and hands-on with cloud-native and MLOps tooling (Kubernetes, Terraform, Argo CD, Prometheus/Grafana, MLflow, KServe). Also: scikit-learn · NumPy · pandas · Streamlit.
 
 ### 🖥️ From my terminal
 
@@ -201,7 +203,7 @@ Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terr
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sayaksatpathi)
 [![Portfolio](https://img.shields.io/badge/Portfolio-0B1220?style=for-the-badge&logo=vercel&logoColor=white)](https://sayak.antideploy.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sayaksatpathi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sayak-satpathi-34031b240)
 
 </div>
 
