@@ -62,7 +62,7 @@ Adaptive **RAG platform + evaluation harness** — grounded answers with citatio
 <tr>
 <td width="50%" valign="top">
 
-#### ☁️ [AWS EKS GitOps Lab](https://github.com/sayaksatpathi/AWS-EKS-GitOps-Production-Lab-)
+#### ☁️ [AWS EKS GitOps Lab](https://github.com/sayaksatpathi/AWS-EKS-GitOps-Production-Lab)
 Production-style **Kubernetes GitOps** on real AWS — EKS provisioned with Terraform, CI/CD via GitHub Actions + OIDC, Argo CD delivery, Prometheus/Grafana/Loki observability, and demonstrated rollback.
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/EKS-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
